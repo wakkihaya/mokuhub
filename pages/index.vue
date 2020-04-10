@@ -23,7 +23,8 @@
       <div class="content_title"> moku hub とは</div>
       <div class="explain_content">
         "moku hub"とは、 <br>
-        <span>パッション</span>を持った仲間と繋がることで、ひとり⾃宅でも最高の<span>アウトプット</span>を⽣みすことが出来る<span>オンライン上のコワーキングスペース</span>です。 <br>
+        <span>パッション</span>を持った仲間と繋がることで、ひとり⾃宅でも最高の<span>アウトプット</span>を⽣みすことが出来る<span><br>
+        オンライン上のコワーキングスペース</span>です。 <br>
         また、作業するだけではなくコミュニティ内では議論会や飲み会などイベントが活発に⾏われています。
       </div>
     </div>
@@ -41,7 +42,7 @@
       <div class="rule">
         <div class="content_sub_title">ルール</div>
         <div class="rule_listing">
-          <div class="rule_item"><p>寝癖、パジャマは禁止<br>(私服、ノーメイクはok)</p></div>
+          <div class="rule_item"><p>寝癖,パジャマは禁止<br>(私服,ノーメイクはok)</p></div>
           <div class="rule_item"><p>作業中は基本ミュート</p></div>
           <div class="rule_item"><p>自身のビジネスの宣伝や勧誘は禁止</p></div>
         </div>
@@ -105,9 +106,11 @@ export default {
         if ($(this).scrollTop() >100) {
             //メインビジュアル内にいるので、クラスを外す。
             header.css('background', "#ffffff");
+            header.css('border-bottom', "solid 1px #fd730b");
         }else {
             //メインビジュアルより下までスクロールしたので、クラスを付けて色を変える
             header.css('background', "none");
+            header.css('border-bottom', "none");
         }
     });
 },

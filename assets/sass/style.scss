@@ -1,9 +1,15 @@
 $title-textsize: 7vh;
+$title-sp-textsize: 7vw;
 $content-main-textsize: 4vh;
+$content-main-sp-textsize: 6vw;
 $content-sub-title-textsize: 3.5vh;
+$content-sub-title-sp-textsize: 5vw;
 $content-sub-emphasize-textsize: 3.3vh;
+$content-sub-emphasize-sp-textsize: 4.5vw;
+$content-sub-sp-textsize: 3.5vw;
 $content-sub-textsize: 3vh;
 $content-subsub-textsize: 2.3vh;
+$content-subsub-sp-textsize: 3vw;
 $main-color: #fd730b;
 $light-main-color: #ffdec5;
 
@@ -48,9 +54,9 @@ header {
     transform : translate(-50%,-50%);
     text-align: center;
     font-weight: bold;
-    font-family: "Hiragino Kaku Gothic ProN";
+    font-family: "Yu Gothic";
   }
-  .button_to_join{
+    .button_to_join{
     position: absolute;
     background:$main-color;
     color: #fff;
@@ -62,16 +68,22 @@ header {
     box-shadow: 2px 2px 4px;
     cursor:pointer;
   }
+  @media only screen and (max-device-width : 750px) { //スマホ対応
+    height: 70vh;
+    .rendering_title{
+      text-align: left;
+      padding-left:5%;
+      font-size: $title-sp-textsize;
+    }
+    .button_to_join{
+      padding:4% 9%;
+    }
+  }
 }
 
 // moku hub とは
-.content_title{
-  font-size: $content-main-textsize;
-}
-.explain_content{
-  margin-top: 5%;
-  font-size: $content-sub-textsize;
-}
+
+
 .explain ,.content_community ,.merit, .rule_community, #contact{
   margin: 0;
   padding: 5% 10% 10% 10% ;
@@ -90,6 +102,21 @@ header {
       font-weight: bold;
     }
   }
+
+  @media only screen and (max-device-width : 750px) { //スマホ対応
+    .content_title{
+      font-size: $content-main-sp-textsize;
+    }
+    .explain_content{
+      margin-top: 15%;
+      font-size: $content-sub-sp-textsize;
+      margin-bottom: 10%;
+      span{
+        font-size:$content-sub-emphasize-sp-textsize
+      }
+    }
+  }
+
 }
 
 //コミュニティの内容
@@ -107,25 +134,28 @@ header {
   .rule{
     margin-top: 5%;
   }
-  .rule_listing{
+  .rule_listing {
     display: flex;
     margin-top: 5%;
-    .rule_item{
+
+    .rule_item {
       text-align: center;
       width: 25%;
-      margin:4.16%;
+      margin: 4.16%;
       padding: 3%;
       height: 20vh;
       border: solid #fff;
       border-radius: 8px;
       box-shadow: 0 0 8px grey;
       display: table;
-      p{
+
+      p {
         display: table-cell;
         vertical-align: middle;
         font-size: $content-subsub-textsize;
         font-weight: bold;
       }
+
     }
   }
 
@@ -138,6 +168,25 @@ header {
       }
     }
   }
+
+  @media only screen and (max-device-width: 750px) { //スマホ対応
+    .content_sub_title{
+      font-size: $content-sub-title-sp-textsize;
+    }
+    .rule{
+      margin-top: 15%;
+    }
+    .rule_listing .rule_item {
+      margin: 2%;
+      width: 30%;
+      p {
+        font-size: $content-subsub-sp-textsize;
+      }
+    }
+    .environment{
+      margin-top: 15%;
+    }
+  }
 }
 
 //moku hubのメリット
@@ -145,7 +194,10 @@ header {
   .merit_image{
     width: 90%;
     margin: 8% auto 0 auto;
-  }
+    @media only screen and (max-device-width: 750px) { //スマホ対応
+      margin: 15% auto 0 auto;
+    }
+    }
 }
 
 
@@ -158,7 +210,11 @@ header {
   }
   .form{
     margin-top: 5%;
-  }
+    @media only screen and (max-device-width: 750px) { //スマホ対応
+      margin-top: 15%;
+      margin-bottom: 10%;
+    }
+    }
 }
 
 footer{
@@ -167,4 +223,7 @@ footer{
   text-align:center;
   height: 15vh;
   line-height: 15vh;
-}
+  @media only screen and (max-device-width: 750px) { //スマホ対応
+    font-size: 3vw;
+  }
+  }
