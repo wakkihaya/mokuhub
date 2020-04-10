@@ -133,7 +133,7 @@ export default {
                 { hid: 'og:title', property: 'og:title', content: 'moku hub ~パッションの伝染で、最高のアウトプットを。~' },
                 { hid: 'og:description', property: 'og:description', content: 'moku hubとはパッションを持った仲間と繋がることで、ひとり自宅でも最高のアウトプットを生み出すことが出来るオンライン上のコワーキングスペースです。' },
                 { hid: 'og:url', property: 'og:url', content: 'https://mokuhub.work' },
-                { hid: 'og:image', property: 'og:image', content: 'mokuhub-logo 2.png' },
+                { hid: 'og:image', property: 'og:image', content: 'https://mokuhub.work/ogp.png' },
             ],
         }
     }
