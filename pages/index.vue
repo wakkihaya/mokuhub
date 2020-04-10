@@ -3,7 +3,9 @@
 
 <!--    renderingページ-->
     <header>
-      <img src="mokuhub-logo.png" />
+      <span v-on:click="moveToTop">
+        <img src="mokuhub-logo.png" />
+      </span>
     </header>
     <div class="rendering-page">
       <div class="rendering_title">
@@ -21,7 +23,7 @@
       <div class="content_title"> moku hub とは</div>
       <div class="explain_content">
         "moku hub"とは、 <br>
-        パッションを持った仲間と繋がることで、ひとり⾃宅でも最高のアウトプットを⽣みすことが出来る<b>オンライン上のコワーキングスペース</b>です。 <br>
+        <span>パッション</span>を持った仲間と繋がることで、ひとり⾃宅でも最高の<span>アウトプット</span>を⽣みすことが出来る<span>オンライン上のコワーキングスペース</span>です。 <br>
         また、作業するだけではなくコミュニティ内では議論会や飲み会などイベントが活発に⾏われています。
       </div>
     </div>
@@ -113,7 +115,11 @@ export default {
       moveToForm(){
           var formTop =$('#contact').offset().top;
           $("html, body").animate({ scrollTop: formTop }, 500);
-      }
+      },
+        moveToTop(){
+            $("html, body").animate({ scrollTop: 0 }, 500);
+
+        }
     }
 }
 </script>

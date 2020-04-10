@@ -1,6 +1,7 @@
 $title-textsize: 7vh;
 $content-main-textsize: 4vh;
 $content-sub-title-textsize: 3.5vh;
+$content-sub-emphasize-textsize: 3.3vh;
 $content-sub-textsize: 3vh;
 $content-subsub-textsize: 2.3vh;
 $main-color: #fd730b;
@@ -11,6 +12,7 @@ $light-main-color: #ffdec5;
   flex-direction: column;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 // rendering ページ
@@ -19,6 +21,9 @@ header {
   width: 100%;
   height: 10%;
   z-index: 100;
+  span{
+    cursor: pointer;
+  }
   img {
     height: 100%;
     padding: 1%;
@@ -29,7 +34,7 @@ header {
   height: 100vh;
   width: 100vw;
   background-image:url('/zoom ex.png');
-  background-size:100% auto;
+  background-size:cover;
   background-repeat: no-repeat;
   // 横に動くバグを直す
   position: relative;
@@ -43,6 +48,7 @@ header {
     transform : translate(-50%,-50%);
     text-align: center;
     font-weight: bold;
+    font-family: "Hiragino Kaku Gothic ProN";
   }
   .button_to_join{
     position: absolute;
@@ -78,6 +84,11 @@ header {
     font-size: $content-sub-textsize;
     line-height: 3em;
     padding: 0 5%;
+    span{
+      color: $main-color;
+      font-size: $content-sub-emphasize-textsize;
+      font-weight: bold;
+    }
   }
 }
 
