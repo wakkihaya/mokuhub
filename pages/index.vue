@@ -60,13 +60,20 @@
     </div>
 
 
-
 <!--    Contact-->
     <div class="contact">
       <div class="content_title">参加したい方はこちら</div>
-
+      <div class="form">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScd4SKkkY5glD4DaZqmkiaa1gHkIs5y0K7xJpAb7ZNoJ2ZXrQ/viewform?embedded=true"
+                            width="100%"
+                            height="995"
+                            frameborder="0"
+                            marginheight="0"
+                            marginwidth="0">
+        Loading…
+      </iframe>
+      </div>
     </div>
-
   </div>
 </template>
 
@@ -93,7 +100,6 @@ export default {
         }
     });
 },
-
 }
 </script>
 

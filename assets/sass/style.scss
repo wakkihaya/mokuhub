@@ -129,5 +129,10 @@ header {
 //参加したい方はこちら
 .contact{
   background: $main-color;
-
+  .content_title{
+    color: #fff;
+  }
+  .form{
+    margin-top: 5%;
+  }
 }
