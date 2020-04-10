@@ -54,7 +54,7 @@ header {
     transform : translate(-50%,-50%);
     text-align: center;
     font-weight: bold;
-    font-family: "Yu Gothic";
+    font-family: "Noto Sans JP","Yu Gothic";
   }
     .button_to_join{
     position: absolute;
@@ -76,7 +76,7 @@ header {
       font-size: $title-sp-textsize;
     }
     .button_to_join{
-      padding:4% 9%;
+      padding:3% 7%;
     }
   }
 }
@@ -104,11 +104,12 @@ header {
   }
 
   @media only screen and (max-device-width : 750px) { //スマホ対応
+    padding: 8% 10% 10% 10% ;
     .content_title{
       font-size: $content-main-sp-textsize;
     }
     .explain_content{
-      margin-top: 15%;
+      margin-top: 10%;
       font-size: $content-sub-sp-textsize;
       margin-bottom: 10%;
       span{

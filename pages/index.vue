@@ -23,7 +23,7 @@
       <div class="content_title"> moku hub とは</div>
       <div class="explain_content">
         "moku hub"とは、 <br>
-        <span>パッション</span>を持った仲間と繋がることで、ひとり⾃宅でも最高の<span>アウトプット</span>を⽣みすことが出来る<span><br>
+        <span>パッション</span>を持った仲間と繋がることで、ひとり⾃宅でも最高の<span>アウトプット</span>を生み出すことが出来る<span><br>
         オンライン上のコワーキングスペース</span>です。 <br>
         また、作業するだけではなくコミュニティ内では議論会や飲み会などイベントが活発に⾏われています。
       </div>
@@ -88,7 +88,6 @@
     </footer>
   </div>
 </template>
-
 
 
 <script>
