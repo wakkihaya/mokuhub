@@ -1,8 +1,19 @@
 $title-textsize: 7vh;
+$content-main-textsize: 4vh;
+$content-sub-title-textsize: 3.5vh;
+$content-sub-textsize: 3vh;
+$content-subsub-textsize: 2.3vh;
+$main-color: #fd730b;
+$light-main-color: #ffdec5;
 
 .container{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 
+// rendering ページ
 header {
   position: fixed;
   width: 100%;
@@ -17,7 +28,10 @@ header {
 .rendering-page {
   height: 100vh;
   width: 100vw;
-  background-image:url('/zoom.png');
+  background-image:url('/zoom ex.png');
+  background-size:100% auto;
+  background-repeat: no-repeat;
+  // 横に動くバグを直す
   position: relative;
   .rendering_title{
     position: absolute;
@@ -28,5 +42,92 @@ header {
     left: 50%;
     transform : translate(-50%,-50%);
     text-align: center;
+    font-weight: bold;
   }
+}
+
+// moku hub とは
+.content_title{
+  font-size: $content-main-textsize;
+}
+.explain_content{
+  margin-top: 5%;
+  font-size: $content-sub-textsize;
+}
+.explain ,.content_community ,.merit, .rule_community, .contact{
+  margin: 0;
+  padding: 5% 10% 10% 10% ;
+  .content_title{
+    font-size: $content-main-textsize;
+    font-weight: bold;
+  }
+  .explain_content{
+    margin-top: 5%;
+    font-size: $content-sub-textsize;
+    line-height: 3em;
+    padding: 0 5%;
+  }
+}
+
+//コミュニティの内容
+.content_community{
+  background: $main-color;
+  color: #fff;
+  .content_sub_title{
+    margin-top: 10%;
+    font-size: $content-sub-title-textsize;
+    color: #fff;
+    text-align:center;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  .rule{
+    margin-top: 5%;
+  }
+  .rule_listing{
+    display: flex;
+    margin-top: 5%;
+    .rule_item{
+      text-align: center;
+      width: 25%;
+      margin:4.16%;
+      padding: 3%;
+      height: 20vh;
+      border: solid #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 8px grey;
+      display: table;
+      p{
+        display: table-cell;
+        vertical-align: middle;
+        font-size: $content-subsub-textsize;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .environment {
+    .environment_list {
+      display: flex;
+      flex-direction: row;
+      img {
+        margin: 5% 9%;
+      }
+    }
+  }
+}
+
+//moku hubのメリット
+.merit{
+  .merit_image{
+    width: 90%;
+    margin: 8% auto 0 auto;
+  }
+}
+
+
+//参加したい方はこちら
+.contact{
+  background: $main-color;
+
 }
