@@ -10,6 +10,10 @@
         パッションの伝染で、 <br>
         最高のアウトプットを。
       </div>
+      <div class="button_to_join" v-on:click="moveToForm">
+        参加フォーム ↓
+      </div>
+
     </div>
 
 <!--    moku hubとは-->
@@ -61,7 +65,7 @@
 
 
 <!--    Contact-->
-    <div class="contact">
+    <div id="contact">
       <div class="content_title">参加したい方はこちら</div>
       <div class="form">
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScd4SKkkY5glD4DaZqmkiaa1gHkIs5y0K7xJpAb7ZNoJ2ZXrQ/viewform?embedded=true"
@@ -74,6 +78,11 @@
       </iframe>
       </div>
     </div>
+
+<!--    footer-->
+    <footer>
+      Copyright © mokuhub team All Rights Reserved.
+    </footer>
   </div>
 </template>
 
@@ -100,6 +109,12 @@ export default {
         }
     });
 },
+    methods:{
+      moveToForm(){
+          var formTop =$('#contact').offset().top;
+          $("html, body").animate({ scrollTop: formTop }, 500);
+      }
+    }
 }
 </script>
 

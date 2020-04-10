@@ -44,6 +44,18 @@ header {
     text-align: center;
     font-weight: bold;
   }
+  .button_to_join{
+    position: absolute;
+    background:$main-color;
+    color: #fff;
+    bottom: 5%;
+    left: 50%;
+    transform : translate(-50%,-50%);
+    padding: 1% 4%;
+    border-radius: 6px;
+    box-shadow: 2px 2px 4px;
+    cursor:pointer;
+  }
 }
 
 // moku hub とは
@@ -54,7 +66,7 @@ header {
   margin-top: 5%;
   font-size: $content-sub-textsize;
 }
-.explain ,.content_community ,.merit, .rule_community, .contact{
+.explain ,.content_community ,.merit, .rule_community, #contact{
   margin: 0;
   padding: 5% 10% 10% 10% ;
   .content_title{
@@ -127,12 +139,21 @@ header {
 
 
 //参加したい方はこちら
-.contact{
+#contact{
   background: $main-color;
+  padding-bottom: 5%;
   .content_title{
     color: #fff;
   }
   .form{
     margin-top: 5%;
   }
+}
+
+footer{
+  background: #f0f0f0;
+  color: #000;
+  text-align:center;
+  height: 15vh;
+  line-height: 15vh;
 }
