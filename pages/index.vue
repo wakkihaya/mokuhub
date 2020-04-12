@@ -23,8 +23,7 @@
       <div class="content_title"> moku hub とは</div>
       <div class="explain_content">
         "moku hub"とは、 <br>
-        <span>パッション</span>を持った仲間と繋がることで、ひとり⾃宅でも最高の<span>アウトプット</span>を生み出すことが出来る<span><br>
-        オンライン上のコワーキングスペース</span>です。 <br>
+        <span>パッション</span>を持った仲間と繋がることで、ひとり⾃宅でも最高の<span>アウトプット</span>を生み出すことが出来る<span>オンライン上のコワーキングスペース</span>です。 <br>
         また、作業するだけではなくコミュニティ内では議論会や飲み会などイベントが活発に⾏われています。
       </div>
     </div>
@@ -142,7 +141,7 @@ export default {
   body,html{
     margin: 0;
     padding: 0;
-    font-family: "Yu Gothic UI Semibold", "Noto Sans JP", sans-serif;
+    font-family: "Yu Gothic UI Semibold", 'Hiragino Sans', 'Hiragino Kaku Gothic ProN',"Noto Sans JP", sans-serif;
   }
 .container {
   margin: 0 auto;
