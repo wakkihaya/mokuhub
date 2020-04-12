@@ -141,7 +141,7 @@ export default {
   body,html{
     margin: 0;
     padding: 0;
-    font-family:  'Hiragino Sans', 'Hiragino Kaku Gothic ProN',"Yu Gothic UI Semibold","Noto Sans JP", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN',"Yu Gothic UI Semibold","Noto Sans JP", sans-serif;
   }
 .container {
   margin: 0 auto;
